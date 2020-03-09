@@ -1,0 +1,715 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #FDFEFE!important;
+}
+::selection{
+    background-color: #e36431;
+    color: #0B4163;
+}
+.header{
+	width: 100%;
+}
+.navbar{
+	transition: 0.3s!important;
+}
+
+nav img{
+	transition: 0.3s;
+	width: 50px;
+}
+nav li{
+	font-size: 17px;
+}
+nav li a{
+	color: black!important;
+	opacity: 1!important;
+	transition: 0.3s;
+}
+nav li a:hover{
+	color: #e36431!important;
+	transition: 0.3s;
+}
+
+.carousel-indicators li{
+	cursor: pointer;
+	width: 15px !important;
+	height: 15px !important;
+	background-color: #e36431!important;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #0B4163;
+	border-width: 2px;
+}
+.carousel-indicators .active{
+	background-color: #0B4163!important;
+	border-color: #e36431;
+}
+.carousel-control-prev, .carousel-control-next {
+	opacity: 1!important;
+	font-size: 30px!important;
+	transition: 0.3s;
+}
+
+.carousel-control-prev span, .carousel-control-next span{
+	transition: 0.3!important;
+	color: #0B4163!important;
+	width: 70px;
+	height: 45px;
+	background-color: #e36431;
+}
+.carousel-control-prev:hover span, .carousel-control-next:hover span{
+	color: #e36431!important;
+	transition: 0.3s ease-in-out;
+	width: 90px;
+	height: 45px;
+	background-color: #0B4163;
+}
+.carousel-control-prev span{
+	transition: 0.3s;
+	position: absolute;
+	left: 0!important;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.carousel-control-next span{
+	transition: 0.3s;
+	position: absolute;
+	right: 0!important;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.header-text{
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.header-text h1{
+	color: white;
+	font-size: 60px;
+	text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
+               0px 4px 7px rgba(0,0,0,0.3),
+               0px 9px 12px rgba(0,0,0,0.3);
+	letter-spacing: 3px;
+	word-spacing: 5px;
+}
+.header-text a{
+	position: absolute;
+	margin-top: 50px;
+	width: 200px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #0B4163;
+	border-radius: 20px;
+	background-color: #0B4163;
+	font-size: 18px;
+	color: white;
+}
+.header-text a:hover{
+	background-color: white;
+	color: #0B4163;
+}
+@media screen and (max-width: 600px){
+	nav{
+		position: sticky!important;
+		top: 0!important;
+	}
+	nav img{
+		width: 30px;
+	}
+	nav{
+		background-color: #f8f9fa!important;
+
+	}
+	.carousel-indicators{
+		margin-bottom: -5px;
+	}
+	.carousel-indicators li{
+		border-width: 1.5px!important;
+		width: 10px!important;
+		height: 10px!important;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		font-size: 20px!important;
+	}
+
+	.carousel-control-prev span, .carousel-control-next span{
+		width: 40px;
+		height: 30px;
+	}
+	.carousel-control-prev:hover span, .carousel-control-next:hover span{
+		width: 40px;
+		height: 30px;
+	}
+	.header-text{
+		top: 45%;
+	}
+	.header-text h1{
+		font-size: 18px;
+	}
+	.header-text a{
+		width: 110px;
+		font-size: 8px;
+		margin-top: 1%;	
+	}
+
+}
+@media screen and (min-width: 600px){
+	.navindex{
+		position: fixed!important;
+		top: 0!important;
+		z-index: 999;
+		background-color: transparent!important;
+	}
+	nav ul{
+		margin-left: 120px!important;
+	}
+	nav li{
+		margin-left: 15px;
+	}
+	.light-bg{
+		transition: 0.3s!important;
+		background-color: #f8f9fa!important;
+		box-shadow: 0px 1px 10px #999;
+	}
+	.light-bg img{
+		width: 70px;
+		transition: 0.3s;
+	}
+	.carousel{
+/*		position: absolute!important;
+*/		top: 0!important;
+		margin: 0!important;
+	}
+	.carousel{
+		height: 100vh;
+	}
+	.carousel img{
+		height: 100vh;
+	}
+}
+/*courses*/
+h2{
+  text-align:center;
+  padding: 20px;
+}
+.kurslar{
+	position: static;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.prev-arrow{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 99;	
+	margin-left: -10px;
+}
+.next-arrow{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 99;
+	margin-right: -10px;
+
+}
+.prev-arrow,.next-arrow{
+	transition: 0.3s;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border:none;
+	background-color:rgba(11,65,99,0.8);
+	color: white;
+	outline: none;
+}
+.prev-arrow:hover,.next-arrow:hover{
+	transition: 0.3s;
+	background-color: #0B4163;
+}
+.prev-arrow:focus,.next-arrow:focus{
+	outline: none;
+}
+
+
+.view {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin:10px 0px;
+}
+
+.view .mask,
+.view .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.view img {
+  display: block;
+  position: relative; 
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+/*1*/
+
+.view-first img {
+  /*1*/
+  transition: all 0.2s linear;
+  width: 100%;
+  height: 100%;
+}
+
+.view-first .mask {
+  opacity: 0;
+  background-color: rgba(244, 89, 5,0.7);
+  transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  font-family: Raleway, serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+
+
+/* */
+
+.view-first:hover img {
+  transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+  opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+.btnmore {
+  border: none!important;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btnmore span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btnmore:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #0B4163;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btnmore:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+
+
+
+.customer-logos .slide{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 2px
+}
+/* // courses*/
+
+/*ourvision*/
+.vision{
+	min-height: 1px!important;
+	overflow-x:hidden; 
+}
+.vision div:nth-child(1){
+	background-color: #04273b;
+	color: white;
+	text-align: right;
+	min-height: 1px!important;
+	height: 200px;
+}
+.vision div:nth-child(2){
+	background-color: #f45905;
+	color: white;
+	text-align: left;
+	min-height: 1px!important;
+	height: 200px;
+}
+/* //ourvision*/
+
+/*about us*/
+.aboutsection{
+	background-color: #f45905;
+}
+.aboutus .slide{
+	height: 300px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.aboutus .slick-track{
+	margin-top: 3%;
+}
+
+.aboutus .prev-arrow, .aboutus .next-arrow{
+	background-color: transparent;
+}
+
+@media screen and (max-width: 600px){
+	.aboutus img{
+		margin-top: -45px;
+	}
+	.slide p i{
+		color: #f45905;
+		font-size: 23px;
+	}
+	.aboutus .prev-arrow{
+		margin-left: -20px;
+	}
+	.aboutus .next-arrow{
+		margin-right: -20px;
+	}
+	.aboutus .prev-arrow i, .aboutus .next-arrow i{
+		font-size: 30px;
+	}
+}
+@media screen and (min-width: 600px){
+	.aboutus img{
+		margin-top: -70px;
+	}
+	
+	.slide p i{
+		color: #f45905;
+		font-size: 30px;
+	}
+	.aboutus .prev-arrow{
+		margin-left: -30px;
+	}
+	.aboutus .next-arrow{
+		margin-right: -30px;
+	}
+	.aboutus .prev-arrow i, .aboutus .next-arrow i{
+		font-size: 30px;
+	}
+}
+/* //about us*/
+
+.footer{
+	background-color: black;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: #ABB2B9;
+
+}
+.footer ul li a i{
+	color:  #ff3838!important;
+
+}
+.footer ul:nth-child(1) li{
+	font-size: 18px;
+
+}
+.footer ul:nth-child(1) li:nth-child(n+2){
+	margin-top: 10px;
+	
+}
+.footer ul:nth-child(2) li{
+	float: left;
+	font-size: 35px;
+}
+.footer ul:nth-child(2) li:nth-child(n+2){
+	margin-left: 10px;
+}
+.footer ul:nth-child(2) li a i{
+	color: #5F6A6A!important;
+	transition: 0.3s;
+}
+.footer ul:nth-child(2) li a i:hover{
+	transition: 0.3s;
+	color: #D5D8DC!important;
+}
+.footer h5{
+	color: #ABB2B9;
+}
+.footer input{
+	background-color: transparent!important;
+	color: white;
+}
+.footer input:focus{
+	transition: 0.3s;
+	background-color: white!important;
+	
+}
+.footer textarea{
+	resize: none;
+	background-color: transparent;
+	color: white;
+}
+.footer form button{
+	background-color: #0B4163;
+	color: white;
+}
+.footer .upbtn{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40px;
+	background-color: #17202A!important;
+	border-color: #17202A;
+}
+.footer .upbtn:hover{
+	background-color: #566573!important;
+	border-color: #17202A;
+}
+/*====================Kurslar.html======================*/
+/*maincourse*/
+.course-part .firstcpart{
+	background-color: #f45905;
+	border:3px solid #f45905;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.course-part div:nth-child(1) img{
+	clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
+}
+.course-part  .btnmore{
+	letter-spacing: 1px;
+}
+.course-part h4{
+	font-size: 22px;
+}
+.course-part .infobtn{
+	outline: none;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding: 1px;
+	background-color: transparent;
+	color: #0B4163;
+
+}
+.course-part .infobtn:hover{
+	background-color: #0B4163;
+	color: white;
+}
+.course-part .infobtn:focus{
+	outline: none!important;
+}
+.course-part .infobtn i{
+	font-size: 25px;
+}
+@media screen and (max-width: 600px){
+	.course-part h4{
+		font-size: 13px;
+	}
+	.course-part .infobtn{
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		font-size: 12.5px!important;
+	}
+	.course-part .infobtn i{
+		font-size: 13px!important;
+	}
+	.course-part p{
+		font-size: 10px;
+	}
+	.course-part .btnmore{
+		font-size: 10px;
+		padding: 3px 8px;
+		
+	}
+}
